@@ -1,0 +1,22 @@
+<md-dialog aria-label="Add Todo" style="width: 400px;">
+  <form ng-cloak>
+
+    <md-dialog-content>
+      <div class="md-dialog-content">
+        <md-input-container layout-fill>
+          <label>Add Todo</label>
+          <input ng-model="user.title">
+        </md-input-container>
+      </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+      <md-button ng-click="">
+       Cancel
+      </md-button>
+      <md-button class="md-primary" ng-click="">
+        Add
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>

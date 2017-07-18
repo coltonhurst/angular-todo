@@ -5,11 +5,16 @@
     .module('TodoApp')
     .controller('TodoController', TodoController);
 
-  function TodoController() {
+  function TodoController($mdDialog) {
     var vm = this;
-    vm.name = "Colton Hurst";
-    vm.appendToName = function (whatToAppend) {
-      vm.name += whatToAppend;
+
+    vm.showCreateTodoDialog = function (evt) {
+      $mdDialog.show({
+        templateUrl: 'app/todo/createTodo.dialog.html',
+        parent: angular.element(document.body),
+        targetEvent: evt,
+        clickOutsideToClose: true
+      });
     }
   }
 })();
