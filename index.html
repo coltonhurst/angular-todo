@@ -1,15 +1,32 @@
 <!doctype html>
 
-<html ng-app="TodoApp">
+<html lang="en">
     <head>
       <title>Angular Todo List</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="simple todo app">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- css -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.css" />
     </head>
-    <body>
+    <body ng-app="TodoApp">
+
+
+      <h1>Simple todo app</h2>
       <div ng-controller="TodoController as todo">
         {{todo.name}}
       </div>
-      <!-- angular scripts -->
+
+
+      <!-- angular -->
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+      <!-- the following are required for angular material -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-aria.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-messages.min.js"></script>
+      <!-- angular material -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.js"></script>
       <!-- my scripts -->
       <script src="app/app.module.js"></script>
       <script src="app/todo/todo.controller.js"></script>
