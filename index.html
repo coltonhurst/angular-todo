@@ -1,10 +1,17 @@
 <!doctype html>
 
-<html>
+<html ng-app="TodoApp">
     <head>
-
+      <title>Angular Todo List</title>
     </head>
     <body>
-        
+      <div ng-controller="TodoController as todo">
+        {{todo.name}}
+      </div>
+      <!-- angular scripts -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+      <!-- my scripts -->
+      <script src="app/app.module.js"></script>
+      <script src="app/todo/todo.controller.js"></script>
     </body>
 </html>
