@@ -7,7 +7,6 @@
 
   function TodoController($mdDialog) {
     var vm = this;
-
     vm.showCreateTodoDialog = function (evt) {
       $mdDialog.show({
         templateUrl: 'app/todo/createTodo.dialog.html',
