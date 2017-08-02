@@ -5,7 +5,7 @@
     .module('TodoApp')
     .controller('TodoController', TodoController);
 
-  function TodoController($mdDialog) {
+  function TodoController($mdDialog, TodoFactory) {
     var vm = this;
     vm.showCreateTodoDialog = function (evt) {
       $mdDialog.show({
@@ -15,12 +15,6 @@
         clickOutsideToClose: true
       });
     }
+    vm.todos = TodoFactory.getTodos();
   }
 })();
-
-/*
-IIFE:
-(function(){
-
-})();
-*/

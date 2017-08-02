@@ -1,9 +1,9 @@
-<md-dialog aria-label="Add Todo" style="width: 400px;" ng-controller="DialogController as dc">
+<md-dialog aria-label="Add Todo" style="width: 400px;" ng-controller="TodoDialogController as dc">
   <form ng-cloak>
       <div class="md-dialog-content" style="padding-bottom: 0px;">
         <md-input-container layout-fill>
           <label>Add Todo</label>
-          <input ng-model="user.title">
+          <input ng-model="dc.todoContent">
         </md-input-container>
       </div>
     <md-dialog-actions layout="row">
