@@ -5,4 +5,4 @@ The main goal for this project was to develop a small angular app that properly 
 
 Please let me know if you find any bugs or ways that this app doesn't follow the style guide! I worked on this slowly over time, as a fun simple side project.
 
-Want to see it in action? Here's the [demo](www.coltonhurst.com/angular-todo) on my website.
+Want to see it in action? Here's the [demo](http://www.coltonhurst.com/angular-todo) on my website.
