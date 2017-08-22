@@ -13,10 +13,7 @@
         templateUrl: 'app/todo/createTodo.dialog.html',
         parent: angular.element(document.body),
         targetEvent: evt,
-        clickOutsideToClose: true,
-        onRemoving: function () {
-          vm.todos = TodoService.getTodos();
-        }
+        clickOutsideToClose: true
       });
     }
   }
