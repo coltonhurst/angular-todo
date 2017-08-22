@@ -15,6 +15,10 @@
         targetEvent: evt,
         clickOutsideToClose: true
       });
-    }
+    };
+    vm.deleteTodo = function (todo) {
+      var index = vm.todos.indexOf(todo);
+      vm.todos.splice(index, 1);
+    };
   }
 })();

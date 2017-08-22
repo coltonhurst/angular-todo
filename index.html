@@ -22,10 +22,13 @@
             </div>
           </md-toolbar>
           <div ng-repeat="todo in todoCtrl.todos">
-            <md-card>
-              <md-card-content>
+            <md-card layout="row">
+              <md-card-content flex="100">
                 {{todo}}
               </md-card-content>
+              <md-button flex="none" class="md-raised md-warn" ng-click="todoCtrl.deleteTodo(todo)">
+                X
+              </md-button>
             </md-card>
           </div>
         </md-content>
