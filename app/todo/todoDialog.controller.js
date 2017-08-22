@@ -5,7 +5,7 @@
     .module('TodoApp')
     .controller('TodoDialogController', TodoDialogController);
 
-  function TodoDialogController($mdDialog, TodoFactory) {
+  function TodoDialogController($mdDialog, TodoService) {
     var vm = this;
     vm.hide = function() {
       $mdDialog.hide();
@@ -15,7 +15,7 @@
     };
     vm.add = function() {
       $mdDialog.hide();
-      TodoFactory.addTodo(vm.todoContent);
+      TodoService.addTodo(vm.todoContent);
     };
   }
 })();

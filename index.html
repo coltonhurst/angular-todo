@@ -11,16 +11,23 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.css" />
     </head>
     <body ng-app="TodoApp">
-      <div ng-controller="TodoController as todo">
+      <div ng-controller="TodoController as todoCtrl">
         <md-content>
           <md-toolbar class="md-hue-2">
             <div class="md-toolbar-tools">
               <h2 flex md-truncate>Your Todo List</h2>
               <md-button class="md-icon-button" aria-label="Favorite">
-                <md-icon ng-click="todo.showCreateTodoDialog($event)" md-svg-src="app/images/icon-add.svg"></md-icon>
+                <md-icon ng-click="todoCtrl.showCreateTodoDialog($event)" md-svg-src="app/images/icon-add.svg"></md-icon>
               </md-button>
             </div>
           </md-toolbar>
+          <div ng-repeat="todo in todoCtrl.todos">
+            <md-card>
+              <md-card-content>
+                {{todo}}
+              </md-card-content>
+            </md-card>
+          </div>
         </md-content>
       </div>
       <!-- angular -->
@@ -35,6 +42,6 @@
       <script src="app/app.module.js"></script>
       <script src="app/todo/todo.controller.js"></script>
       <script src="app/todo/todoDialog.controller.js"></script>
-      <script src="app/todo/todo.factory.js"></script>
+      <script src="app/todo/todo.service.js"></script>
     </body>
 </html>

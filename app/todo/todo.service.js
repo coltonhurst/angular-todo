@@ -3,9 +3,9 @@
 
   angular
     .module('TodoApp')
-    .service('TodoFactory', TodoFactory);
+    .service('TodoService', TodoService);
 
-  function TodoFactory() {
+  function TodoService() {
     var todos = [];
 
     var addTodo = function(newTodo) {
