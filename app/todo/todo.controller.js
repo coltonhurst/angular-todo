@@ -8,11 +8,11 @@
   function TodoController($mdDialog, TodoService) {
     var vm = this;
     vm.todos = TodoService.getTodos();
-    vm.showCreateTodoDialog = function (evt) {
+    vm.showCreateTodoDialog = function (event) {
       $mdDialog.show({
-        templateUrl: 'app/todo/createTodo.dialog.html',
+        templateUrl: 'app/todoDialog/createTodo.dialog.html',
         parent: angular.element(document.body),
-        targetEvent: evt,
+        targetEvent: event,
         clickOutsideToClose: true
       });
     };
