@@ -1,5 +1,5 @@
 # angular-todo
-REPO STATUS: retired. It's complete, just has a few bugs that I'll fix when time allows.
+REPO STATUS: complete. (Not done technically, just has a few bugs that ~~I'll fix when time allows.~~ I probably won't fix...)
 
 A simple angular 1.x todo list.
 
